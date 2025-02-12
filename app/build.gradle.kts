@@ -50,10 +50,11 @@ android {
 }
 
 dependencies {
-//    implementation(libs.androidx.appcompat)
-//    implementation(libs.material)
-//    implementation(libs.androidx.activity)
-//    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.material)
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation(libs.androidx.activity)
     val room_version = "2.6.1"
 
     implementation ("androidx.room:room-runtime:$room_version")
@@ -72,4 +73,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
+    implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
 }
